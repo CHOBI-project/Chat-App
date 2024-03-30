@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/login.css">
+
+    <title>Chat App Login</title>
+    <meta name="description" content="Node.jsの勉強でチャットアプリを作ってみた。">
+
+  </head>
+  <body>
+    
+    <div id="app" class="login-page">
+      <h1>Login</h1>
+      <a href="./entry.html">IDをお持ちでない方</a>
+
+      <form id="login-form" class="login-form" itemid="login-form">
+        <label>
+          <p>ID : </p>
+          <input type="number" id="login-id" placeholder="IDを入力">
+        </label>
+
+        <label>
+          <p>Pass : </p>
+          <input type="text" id="login-pass" placeholder="Passを入力">
+        </label>
+
+        <button>Login</button>
+      </form>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

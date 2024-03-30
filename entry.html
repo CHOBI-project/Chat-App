@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/entry.css">
+
+    <title>Chat App Entry</title>
+    <meta name="description" content="Node.jsの勉強でチャットアプリを作ってみた。">
+</head>
+<body>
+
+    <div class="entry-page">
+        <h1>Entry</h1>
+        <a href="./index.html">ログイン画面に移る</a>
+
+  
+        <form method="post" id="entry-form" class="entry-form">
+          <label>
+            <p>ID : </p>
+            <input type="number" id="entry-id" placeholder="半角数字を入力">
+          </label>
+  
+          <label>
+            <p>Pass : </p>
+            <input type="text" id="entry-pass" placeholder="お好きにどうぞ">
+          </label>
+          
+          <button id="entry-bt">Entry</button>
+        </form>
+      </div>
+
+    <script type="module" src="/src/entry.ts"></script>
+</body>
+</html>

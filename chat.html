@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/chat.css">
+
+    <title>Chat App</title>
+    <meta name="description" content="Node.jsの勉強でチャットアプリを作ってみた。">
+</head>
+
+<body>
+    <div class="chat-page">
+
+        <span class="timer" id="timer">2024-03-29 | 21:20</span>
+        <a href="./index.html">Logout</a>
+
+        <h1>Chat App</h1>
+    
+        <div class="chat-disp">
+            <div id="message-container">
+                <h2>Top<span>※最新100件まで表示</span></h2>
+            </div>
+
+            <form method="post" class="form" id="form">
+                <input type="text" id="message" placeholder="メッセージを入力">
+                <input type="image" src="./public/submit.svg" alt="" width="40" height="40">
+            </form>
+        </div>
+    </div>
+
+    <video src="./public/chatBg.mov" autoplay muted loop></video>
+
+    <script type="module" src="./src/chat.ts"></script>
+</body>
+
+</html>

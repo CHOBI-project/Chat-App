@@ -1,0 +1,22 @@
+{
+  "name": "chatapp-ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "json-server": "json-server --watch src/data/app.json --port 3001"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "json-server": "^1.0.0-alpha.23",
+    "uuid": "^9.0.1"
+  }
+}
