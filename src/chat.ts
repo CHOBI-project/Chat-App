@@ -18,11 +18,13 @@ setInterval(() => {
     timer.innerHTML = currentTime;
 }, 1000);
 
+messageContainer.scrollIntoView(false);
+
 
 //メッセージ送信時に発火
 function submitHandle(e: SubmitEvent) {
     e.preventDefault();
-    
+        
     const ID   = uuidv4();
     const text = message.value; 
     const time = getTime();
@@ -37,6 +39,8 @@ function submitHandle(e: SubmitEvent) {
     addMessage(messageData);
 
     message.value = "";
+    messageContainer.scrollIntoView(false);
+
 }
 form.addEventListener('submit', submitHandle);
 
